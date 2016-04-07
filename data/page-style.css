@@ -1,0 +1,52 @@
+.fullscreen #wiki-tools, .fullscreen #toc, .fullscreen #header, .fullscreen #footer, .fullscreen #breadcrumbs {
+   display: none;
+ }
+
+.fullscreen .noprint, .fullscreen #siteNotice, .fullscreen #contentSub, .fullscreen .editsection {
+  display: none;
+}
+
+.fullscreen #mw-navigation {
+  display: none;
+}
+
+.fullscreen #content {
+  margin: 0;
+}
+
+.fullscreen p {
+  margin: 1em 0;
+}
+
+.fullscreen #main {
+  padding: 0;
+  margin: 0;
+}
+
+.fullscreen h1, .fullscreen h2, .fullscreen h3 {
+  padding: .5em 0;
+  margin-top: 2em;
+}
+
+.fullscreen #content h1:nth-of-type(4) {
+  display: none;
+}
+
+.fullscreen #content h1:nth-of-type(4) ~ * {
+  display: none;
+}
+
+.fullscreen .wikitable {
+  position: relative;
+}
+
+.fullscreen .wikitable tr {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+body.fullscreen  {
+  margin: 0;
+  border-radius: 0;
+  font-size: 120%;
+}
