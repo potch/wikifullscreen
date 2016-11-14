@@ -2,7 +2,7 @@
     var currentState = localStorage.getItem('fullscreen') === 'true';
     document.body.classList.toggle('fullscreen', currentState);
     document.body.addEventListener('keydown', function(e) {
-        if (e.keyCode === 70 && e.ctrlKey) {
+        if (e.keyCode === 70 && e.ctrlKey && e.shiftKey) {
             document.body.classList.toggle('fullscreen');
             localStorage.setItem('fullscreen', document.body.classList.contains('fullscreen'));
         }
