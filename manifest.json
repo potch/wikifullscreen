@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "wikifullscreen",
+  "version": "2.0",
+
+  "description": "Take a mozilla wiki page Full Screen",
+
+  "content_scripts": [
+    {
+      "matches": ["*://wiki.mozilla.org/*"],
+      "js": ["script.js"],
+      "css": ["style.css"]
+    }
+  ]
+
+}
