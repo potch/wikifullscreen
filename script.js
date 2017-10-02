@@ -18,7 +18,7 @@
     window.addEventListener('resize', function () {
       clearTimeout(resizeTimeout);
       var w = window.outerWidth;
-      val.textContent = window.outerWidth + ' x ' + window.outerHeight + ' (' + (3/4 * w | 0) + ')';
+      val.textContent = window.outerWidth + ' x ' + window.outerHeight + ' (' + (9/16 * w | 0) + ')';
       resize.style.opacity = 1;
       resizeTimeout = setTimeout(hide, 3000);
     });
